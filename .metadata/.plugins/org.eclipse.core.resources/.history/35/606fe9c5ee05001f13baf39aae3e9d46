@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>설문조사 폼 만들기</h3>
+<%String path = request.getContextPath();%>
+<form action="<%= path %> / ex01_result.jsp" method="post">
+
+이름 : <input type="text" name ="a1" ><br>
+
+소개 : <input type = "text" name ="a2"><br>
+
+ <fieldset>
+        <legend>연령 조사</legend>
+        10대 : <input type="radio" name="st_name"><br>
+        20대: <input type="radio" name="st_id"><br>
+        30대 : <input type="radio" name="department"><br>
+       
+    </fieldset>
+취미조사 : <input type = "checkbox" name = "a4">
+
+ <button type="submit">전송</button>
+ 
+
+
+	
+
+</form>
+</body>
+</html>

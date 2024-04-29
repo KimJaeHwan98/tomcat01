@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%request.setCharacterEncoding("utf-8"); %>
+	<%= request.getParameter("chk") %>
+	하나의 값을 가지고 올때 사용 파라미터 이름이 달라야 가능하다
+	<hr>
+	<a href="ex02_form.jsp">form</a>
+	
+</body>
+</html>
